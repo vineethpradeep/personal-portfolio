@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Developer Portfolio — Vineeth</title>
+    <meta
+      name="description"
+      content="Portfolio of Your Name — front-end developer. Projects, skills, contact."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrap" id="page">
+      <!-- Header -->
+      <header>
+        <a class="brand" href="#home">
+          <div class="logo" aria-hidden>VP</div>
+          <div>
+            <div style="font-weight: 800">Vineeth Pradeep</div>
+            <div class="tagline">Front-end developer</div>
+          </div>
+        </a>
+
+        <nav aria-label="Primary navigation" id="nav">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          Menu
+        </button>
+      </header>
+
+      <!-- Main content -->
+      <main>
+        <!-- Hero section -->
+        <section class="hero" id="home">
+          <div class="intro">
+            <h1>
+              Hi — I'm
+              <span class="highlight">Vineeth Pradeep</span>
+            </h1>
+            <p class="lead">
+              I build accessible, performant user interfaces and delightful
+              front-end experiences using HTML, CSS and JavaScript. Currently
+              available for freelance projects and full-time roles.
+            </p>
+
+            <div class="cta">
+              <a class="btn" href="#contact">Hire me</a>
+              <a class="btn ghost" href="#projects">See work</a>
+            </div>
+
+            <div class="location">Based in London • Open to remote</div>
+          </div>
+          <aside class="profile-card" aria-label="Profile card">
+            <div class="avatar" role="img" aria-label="Portrait placeholder">
+              VP
+            </div>
+            <div style="margin-top: 12px">
+              <div style="font-weight: 700">Vineeth Pradeep</div>
+              <div class="tagline">
+                Front-end developer — JS, HTML, CSS, React, Angular. I make
+                responsive, accessible UIs.
+              </div>
+            </div>
+
+            <div
+              style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap"
+            >
+              <a class="tag" href="#contact">Contact</a>
+              <a class="tag" href="#projects">Portfolio</a>
+              <a class="tag" href="/resume.pdf">Resume</a>
+            </div>
+          </aside>
+        </section>
+
+        <!-- Projects section -->
+        <section
+          id="projects"
+          class="projects"
+          aria-labelledby="projectsHeading"
+        >
+          <h2 id="projectsHeading">Featured projects</h2>
+
+          <div class="filter">
+            <label for="filter">Filter:</label>
+            <select id="filter" aria-label="Filter projects">
+              <option value="all">All</option>
+              <option value="web">Web</option>
+              <option value="ui">UI</option>
+            </select>
+          </div>
+
+          <div class="projects-grid" id="projectsGrid">
+            <article class="project" data-type="web">
+              <div class="project-image">
+                <img src="asset/dotseek.png" alt="DotSeek" />
+              </div>
+              <h3>DotSeek</h3>
+              <p>
+                Company website — built with Astro, Tailwind and Framer Motion
+              </p>
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <div class="btn-group">
+                <a
+                  class="btn"
+                  href="https://www.dotseek.co.uk/"
+                  aria-label="Open project"
+                  target="_blank"
+                  >Live</a
+                >
+                <a class="btn ghost" href="#" aria-label="View source">Code</a>
+              </div>
+            </article>
+            <article class="project" data-type="ui">
+              <div class="project-image">
+                <img src="asset/eiskenproperties.png" alt="Eisken Properties" />
+              </div>
+              <h3>Eisken Properties</h3>
+              <p>Design system for Eisken — PHP and Laravel</p>
+              <div class="tags">
+                <span class="tag">Design</span><span class="tag">PHP</span>
+              </div>
+              <div class="btn-group">
+                <a
+                  class="btn"
+                  href="https://www.eiskenproperties.com/"
+                  target="_blank"
+                  >Live</a
+                >
+                <a class="btn ghost" href="#">Code</a>
+              </div>
+            </article>
+            <article class="project" data-type="game">
+              <div class="project-image">
+                <img src="asset/thoughtwalks.png" alt="Thought Walks" />
+              </div>
+              <h3>Thought Walks</h3>
+              <p>Thought Walks — Angular and Resposive Web Design</p>
+              <div class="tags">
+                <span class="tag">Angular</span><span class="tag">Laravel</span
+                ><span class="tag">Bootstrap</span>
+              </div>
+              <div class="btn-group">
+                <a class="btn" href="https://thoughtwalks.net/" target="_blank"
+                  >Live</a
+                >
+                <a class="btn ghost" href="#">Code</a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Skills section -->
+        <section id="skills" aria-labelledby="skillsHeading">
+          <h2 id="skillsHeading">Skills</h2>
+          <div class="skills" style="margin-top: 10px">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3 (Flexbox, Grid)</div>
+            <div class="skill">JavaScript (ES6+)</div>
+            <div class="skill">React</div>
+            <div class="skill">Angular</div>
+            <div class="skill">PHP</div>
+          </div>
+        </section>
+        <!-- About section -->
+        <section
+          id="about"
+          aria-labelledby="aboutHeading"
+          style="margin-top: 18px"
+        >
+          <h2 id="aboutHeading">About me</h2>
+          <p class="lead">
+            I'm a front-end developer focused on building delightful, accessible
+            interfaces. I care about performance, developer experience, and
+            shipping products that users love. When I'm not coding I enjoy
+            sketching UI ideas and tinkering with small game prototypes.
+          </p>
+        </section>
+        <!-- Contact section -->
+        <section id="contact" style="margin-top: 18px">
+          <h2>Contact</h2>
+          <form class="contact-form" id="contactForm" novalidate>
+            <label for="name">Name</label>
+            <input id="name" name="name" required placeholder="Your name" />
+
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="you@example.com"
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Tell me about your project..."
+            ></textarea>
+
+            <div class="btn-group">
+              <button class="btn" type="submit">Send message</button>
+              <button class="btn ghost" type="reset">Reset</button>
+            </div>
+
+            <div id="formResult" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer>
+        <div>
+          © <span id="year"></span> Your Name — built with HTML • CSS •
+          JavaScript
+        </div>
+      </footer>
+      <div id="mobileMenu">
+        <nav>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
