@@ -1,10 +1,4 @@
- /* ==========================
-       Simple responsive portfolio
-       HTML / CSS / Vanilla JS
-       - Single-file example
-       - Accessible, semantic
-       ========================== */
-
+ /* Global variables */
  :root {
      --bg: #0f1724;
      --card: #0b1220;
@@ -18,7 +12,10 @@
      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
  }
 
- * {
+ /* Reset */
+ *,
+ *::before,
+ *::after * {
      box-sizing: border-box
  }
 
@@ -209,11 +206,9 @@
  .project-image {
      width: 100%;
      aspect-ratio: 16 / 9;
-     /* keeps consistent proportions */
      border-radius: 12px;
      overflow: hidden;
      background: rgba(255, 255, 255, 0.05);
-     /* fallback background */
      display: flex;
      align-items: center;
      justify-content: center;
@@ -230,13 +225,11 @@
      width: 100%;
      height: 100%;
      object-fit: cover;
-     /* ensures the image fills without distortion */
      transition: transform 0.4s ease;
  }
 
  .project-image:hover img {
      transform: scale(1.05);
-     /* subtle zoom effect on hover */
  }
 
  .project h3 {
@@ -274,7 +267,6 @@
      text-decoration: none;
  }
 
- /* Skills */
  .skills {
      display: flex;
      gap: 10px;
@@ -294,7 +286,6 @@
      max-width: 70ch
  }
 
- /* Contact */
  .contact-form {
      display: grid;
      gap: 8px
@@ -365,7 +356,6 @@
      }
  }
 
- /* small interactions */
  .project:hover {
      transform: translateY(-6px);
      transition: transform 220ms cubic-bezier(.2, .8, .2, 1)
